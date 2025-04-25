@@ -10,7 +10,7 @@ VTScanX is a free tool that allows users to scan multiple files at once on Virus
 - **Caching**: Avoid redundant API calls by storing results in a local cache.
 - **User Authentication**: Register, log in, and manage your account with ease.
 - **Customizable Reports**: Generate detailed reports in JSON format.
-- 
+  
 ---
 
 ## Installation
