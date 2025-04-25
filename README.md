@@ -17,7 +17,7 @@ VTScanX is a free tool that allows users to scan multiple files at once on Virus
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/VTScanX.git
+   [git clone https://github.com/your-repo/VTScanX.git](https://github.com/abhishek-kadavala/VTScanX.git)
    cd VTScanX
    ```
 
