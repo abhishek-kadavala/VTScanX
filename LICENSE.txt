@@ -1,0 +1,7 @@
+VTScanX License
+
+VTScanX is free to use for personal and non-commercial purposes.
+
+The source code and files provided in this repository are not open source. Redistribution, modification, reverse engineering, or commercial use is strictly prohibited without written permission from the author.
+
+All rights reserved © 2025.
