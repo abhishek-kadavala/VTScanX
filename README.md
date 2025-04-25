@@ -118,6 +118,18 @@ python3 vt_client.py -f file1.exe -r
    ```
 2. Enter your email and password to retrieve your API key.
 
+### Reset Password
+1. Run the following command:
+   ```bash
+   python3 vt_client.py --reset
+   ```
+2. Enter your email and reset the password
+
+ Alternatively, you can provide the email directly:
+   ```bash
+   python3 vt_client.py --reset email_id
+   ```
+
 ---
 
 ## Benefits
