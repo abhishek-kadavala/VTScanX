@@ -124,8 +124,7 @@ python3 vt_client.py -f file1.exe -r
    python3 vt_client.py --reset
    ```
 2. Enter your email and reset the password
-
-   Alternatively, you can provide the email directly:
+3. Alternatively, you can provide the email directly:
    ```bash
    python3 vt_client.py --reset email_id
    ```
