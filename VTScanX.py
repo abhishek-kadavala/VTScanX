@@ -12,7 +12,7 @@ import getpass
 import sys
 
 # Server API endpoints
-BASE_URL = "http://10.20.72.54:8000/"
+BASE_URL = "http://12.10.3.78:8000/"
 SERVER_API_URL = f"{BASE_URL}/check_hash"
 CACHE_FILE = "cache.json"
 API_KEY=""
