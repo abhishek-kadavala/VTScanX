@@ -230,7 +230,7 @@ def registration():
 
     # Step 3: Complete Registration
     while True:
-        password = getpass.getpass("Enter your password: ").strip()
+        password = getpass.getpass("Setup your password: ").strip()
         con_password = getpass.getpass("Re-enter your password: ").strip()
         if password != con_password:
             print("Passwords do not match. Please try again.")
