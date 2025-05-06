@@ -236,6 +236,8 @@ def registration():
             print("Passwords do not match. Please try again.")
         elif not password.strip():
             print("Password cannot be empty. Please try again.")
+        elif len(password) < 6:
+            print("Password must be at least 6 characters long. Please try again.")
         else:
             break
 
