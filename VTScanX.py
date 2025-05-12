@@ -11,7 +11,6 @@ import time
 import getpass
 import sys
 
-# Server API endpoints
 API_KEY=""
 BASE_URL = "http://12.10.0.239:8000/"
 SERVER_API_URL = f"{BASE_URL}/check_hash"
