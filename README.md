@@ -25,7 +25,21 @@ VTScanX is a free tool that allows users to scan multiple files at once on Virus
    ```bash
    pip install -r requirements.txt
    ```
+   
+2. Register and get your API key:
+   ```bash
+   python3 VTScanX.py --register
+   ```
+   Follow the registration process as prompted.
+   Once completed, you will receive an API key that starts with vtscax_.
 
+###Important:
+Open the source code and locate the API_KEY variable (which is blank by default).
+Set its value to the API key you received:
+   ```bash
+   API_KEY = "your_vtscanx_api_key_here"
+   ```
+   
 ---
 
 ## Usage
