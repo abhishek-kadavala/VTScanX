@@ -36,9 +36,9 @@ VTScanX is a free tool that allows users to scan multiple files at once on Virus
   ### Important:
   Open the source code and locate the API_KEY variable (which is blank by default).
   Set its value to the API key you received:
-     ```bash
-     API_KEY = "your_vtscanx_api_key_here"
-     ```
+  ```bash
+  API_KEY = "your_vtscanx_api_key_here"
+  ```
    
 ---
 
