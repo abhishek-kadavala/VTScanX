@@ -66,32 +66,32 @@ VTScanX provides a variety of options to customize your scanning experience.
 
 #### 1. Scan a Single File
 ```bash
-python3 vt_client.py -f file1.exe
+python3 VTScanX.py -f file1.exe
 ```
 
 #### 2. Scan Multiple Files
 ```bash
-python3 vt_client.py -f file1.exe,file2.pdf
+python3 VTScanX.py -f file1.exe,file2.pdf
 ```
 
 #### 3. Scan a Directory
 ```bash
-python3 vt_client.py -p /path/to/directory
+python3 VTScanX.py -p /path/to/directory
 ```
 
 #### 4. Scan a Directory and SubDirectory
 ```bash
-python3 vt_client.py -p /path/to/directory -s
+python3 VTScanX.py -p /path/to/directory -s
 ```
 
 #### 5. Enable Verbose Mode
 ```bash
-python3 vt_client.py -f file1.exe -v
+python3 VTScanX.py -f file1.exe -v
 ```
 
 #### 6. Generate a Report
 ```bash
-python3 vt_client.py -f file1.exe -r
+python3 VTScanX.py -f file1.exe -r
 ```
 
 ---
@@ -121,26 +121,26 @@ python3 vt_client.py -f file1.exe -r
 ### Registration
 1. Run the following command:
    ```bash
-   python3 vt_client.py --register
+   python3 VTScanX.py --register
    ```
 2. Enter your email and follow the prompts to complete registration.
 
 ### Login
 1. Run the following command:
    ```bash
-   python3 vt_client.py --login
+   python3 VTScanX.py --login
    ```
 2. Enter your email and password to retrieve your API key.
 
 ### Reset Password
 1. Run the following command:
    ```bash
-   python3 vt_client.py --reset
+   python3 VTScanX.py --reset
    ```
 2. Enter your email and reset the password
 3. Alternatively, you can provide the email directly:
    ```bash
-   python3 vt_client.py --reset email_id
+   python3 VTScanX.py --reset email_id
    ```
 
 ---
