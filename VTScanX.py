@@ -12,7 +12,7 @@ import getpass
 import sys
 
 API_KEY=""
-BASE_URL = "http://12.10.0.239:8000/"
+BASE_URL = "https://vtscanx.cyberlearn360.com/"
 SERVER_API_URL = f"{BASE_URL}check_hash"
 CACHE_FILE = "cache.json"
 
