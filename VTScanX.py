@@ -206,9 +206,13 @@ def registration():
     show_loading("Sending OTP", 2)
     response = requests.post(f"{BASE_URL}/request-otp", json={"email": email})
     if response.status_code != 200:
-        print("Error requesting OTP:", response.json())
+        try:
+            error_data = response.json()
+            print("Error requesting OTP:", error_data.get("detail", error_data))
+        except json.JSONDecodeError:
+            print("Error requesting OTP: Received non-JSON response with status", response.status_code)
         return
-
+        
     print("OTP sent to your email.")
     otp = input("Enter the OTP you received: ")
     api_key = input("Enter your VirusTotal API key: ")
