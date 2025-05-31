@@ -1,22 +1,36 @@
 #!/bin/bash
 
-echo "[*] Cloning VTScanX..."
-git clone https://github.com/abhishek-kadavala/VTScanX.git /opt/VTScanX || exit 1
+# Set installation path
+INSTALL_DIR="/opt/VTScanX"
+VENV_DIR="$INSTALL_DIR/venv"
+BIN_PATH="/usr/local/bin/vtscanx"
 
-cd /opt/VTScanX || exit 1
+# Clone repo
+sudo git clone https://github.com/abhishek-kadavala/VTScanX.git "$INSTALL_DIR" || {
+    echo "[!] Failed to clone repo."
+    exit 1
+}
 
-echo "[*] Installing dependencies..."
-pip3 install -r requirements.txt --break-system-packages || exit 1
+# Create virtual environment
+sudo apt update && sudo apt install -y python3-venv
+python3 -m venv "$VENV_DIR"
 
-echo "[*] Ensuring shebang is present..."
-if ! grep -q "#!/usr/bin/env python3" VTScanX.py; then
-    sed -i '1i #!/usr/bin/env python3' VTScanX.py
-fi
+# Activate and install requirements
+"$VENV_DIR/bin/pip" install -r "$INSTALL_DIR/requirements.txt" || {
+    echo "[!] Failed to install dependencies."
+    exit 1
+}
 
-echo "[*] Making script executable..."
-chmod +x VTScanX.py
+# Inject shebang to the script
+sed -i '1i #!/usr/bin/env python3' "$INSTALL_DIR/VTScanX.py"
 
-echo "[*] Creating symlink to /usr/local/bin/vtscanx..."
-ln -sf /opt/VTScanX/VTScanX.py /usr/local/bin/vtscanx
+# Create wrapper script for global use
+sudo tee "$BIN_PATH" > /dev/null <<EOF
+#!/bin/bash
+"$VENV_DIR/bin/python" "$INSTALL_DIR/VTScanX.py" "\$@"
+EOF
 
-echo "[✓] VTScanX installed successfully. Run with: vtscanx --help"
+sudo chmod +x "$BIN_PATH"
+
+echo "[✔] VTScanX installed globally as 'vtscanx'"
+echo "    Try running: vtscanx --help"
