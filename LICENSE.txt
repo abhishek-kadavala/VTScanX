@@ -1,6 +1,6 @@
 Custom License for VTScanX
 
-Copyright (c) 2024 Abhishek Kadavala
+Copyright (c) 2025 Abhishek Kadavala
 
 This software and associated documentation files (the "Software") are provided under the following terms:
 
