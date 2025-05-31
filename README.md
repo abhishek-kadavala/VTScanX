@@ -11,8 +11,36 @@ VTScanX is a free tool that allows users to scan multiple files at once on Virus
 - **User Authentication**: Register, log in, and manage your account with ease.
 - **Customizable Reports**: Generate detailed reports in JSON format.
   
+## Linux Global Installation (Recommended)
+
+1. **Get the bash install script**
+   ```bash
+   curl -O https://raw.githubusercontent.com/abhishek-kadavala/VTScanX/main/install-vtscanx-linux.sh
+   ```
+
+2. **Make the script executable**
+   ```bash
+   chmod +x install-vtscanx-linux.sh
+   ```
+
+3. **Run the script**
+   ```bash
+   ./install-vtscanx-linux.sh
+   ```
+
 ---
 
+This will automatically:
+- Copy the VTScanX script to `/usr/local/bin/` as `vtscanx`
+- Add the necessary shebang if missing
+- Make it available as a command (`vtscanx`) anywhere in your terminal
+
+**Now you can use VTScanX globally:**
+```bash
+vtscanx -f file1.exe
+```
+
+---
 ## Installation
 
 1. Clone the repository:
@@ -33,6 +61,7 @@ VTScanX is a free tool that allows users to scan multiple files at once on Virus
    Follow the registration process as prompted.
    Once completed, you will receive an API key that starts with vtscax_.
 
+---
   ### Important:
   Open the source code and locate the API_KEY variable (which is blank by default).
   Set its value to the API key you received:
