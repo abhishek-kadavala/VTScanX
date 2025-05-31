@@ -17,7 +17,7 @@ VTScanX is a free tool that allows users to scan multiple files at once on Virus
 
 1. **Get the bash install script**
    ```bash
-   curl -O https://raw.githubusercontent.com/abhishek-kadavala/VTScanX/main/install-vtscanx-linux.sh
+   wget https://raw.githubusercontent.com/abhishek-kadavala/VTScanX/main/install-vtscanx-linux.sh
    ```
 
 2. **Make the script executable**
