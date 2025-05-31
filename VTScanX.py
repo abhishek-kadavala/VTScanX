@@ -12,8 +12,8 @@ import getpass
 import sys
 
 API_KEY=""
-BASE_URL = "https://vtscanx.cyberlearn360.com/"
-SERVER_API_URL = f"{BASE_URL}check_hash"
+BASE_URL = "https://vtscanx.cyberlearn360.com"
+SERVER_API_URL = f"{BASE_URL}/check_hash"
 CACHE_FILE = "cache.json"
 
 def calculate_sha256(file_path):
