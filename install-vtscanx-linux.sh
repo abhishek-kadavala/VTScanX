@@ -6,7 +6,7 @@ git clone https://github.com/abhishek-kadavala/VTScanX.git /opt/VTScanX || exit 
 cd /opt/VTScanX || exit 1
 
 echo "[*] Installing dependencies..."
-pip3 install -r requirements.txt || exit 1
+pip3 install -r requirements.txt --break-system-packages || exit 1
 
 echo "[*] Ensuring shebang is present..."
 if ! grep -q "#!/usr/bin/env python3" VTScanX.py; then
