@@ -1,7 +1,12 @@
-VTScanX License
+Custom License for VTScanX
 
-VTScanX is free to use for personal and non-commercial purposes.
+Copyright (c) 2024 Abhishek Kadavala
 
-The source code and files provided in this repository are not open source. Redistribution, modification, reverse engineering, or commercial use is strictly prohibited without written permission from the author.
+This software and associated documentation files (the "Software") are provided under the following terms:
 
-All rights reserved © 2025.
+- You may use, copy, modify, and distribute this software for non-commercial purposes.
+- Commercial use is prohibited without prior written permission from the copyright holder.
+- Redistributions of the code must retain this copyright notice and list of authors.
+- This software is provided "as is", without warranty of any kind.
+
+For questions or commercial licensing, contact: abhishekkadavala11@gmail.com
