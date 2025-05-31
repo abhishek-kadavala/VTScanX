@@ -172,4 +172,4 @@ For any queries or support, please contact the owner:
 - **Name**: Abhishek Kadavala
 - **GitHub**: [abhishek-kadavala](https://github.com/abhishek-kadavala)
 - **mail**: abhishekkadavala11@gmail.com
-- **LinkedIn**: [Abhishek Kadavala]([https://github.com/abhishek-kadavala](https://www.linkedin.com/in/abhishek-kadavala-%F0%9F%87%AE%F0%9F%87%B3-95513a253/))
+- **LinkedIn**: [Abhishek Kadavala](https://www.linkedin.com/in/abhishek-kadavala-%F0%9F%87%AE%F0%9F%87%B3-95513a253/)
